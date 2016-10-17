@@ -44,7 +44,7 @@ class SwitchPanel extends Panel
      */
     public function getSummary()
     {
-        return Yii::$app->view->render('@app/vendor/microinginer/yii2-debug-user-switch/src/views/summary', ['panel' => $this]);
+        return Yii::$app->view->render('@vendor/microinginer/yii2-debug-user-switch/src/views/summary', ['panel' => $this]);
     }
 
     /**
@@ -85,7 +85,7 @@ class SwitchPanel extends Panel
             }
         }
 
-        return Yii::$app->view->render('@app/vendor/microinginer/yii2-debug-user-switch/src/views/detail', [
+        return Yii::$app->view->render('@vendor/microinginer/yii2-debug-user-switch/src/views/detail', [
             'dataProvider' => $dataProvider,
             'panel' => $this,
             'model' => $model,
